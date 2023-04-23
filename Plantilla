@@ -1,0 +1,182 @@
+\documentclass[11.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{graphicx}
+\usepackage{anysize}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{titlesec}
+%\usepackage{pagecolor,lipsum} PACKAGE DE COLOR DE PÁGINAS
+\setcounter{secnumdepth}{4}
+\usepackage{svg}
+\usepackage{titling}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage[most]{tcolorbox}
+\input{insbox}
+\usepackage[hidelinks]{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{tocloft}
+\usepackage{textcomp}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{fancybox}
+\usepackage{hyperref}
+\usepackage{circuitikz}
+%\pagecolor{yellow!30!red} COLOR DE LA PÁGINA
+\definecolor{codecomment}{rgb}{0.13,0.55,0.13}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.99,0.99,0.86}
+\definecolor{codeblack}{rgb}{0,0,0}
+ 
+\lstdefinestyle{mystyle}{   
+    commentstyle=\color{codecomment},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=3
+}
+\lstset{style=mystyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\marginsize{1.5cm}{1.5cm}{1cm}{1cm}
+\graphicspath{ {imagenes/} }
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\begin{document}
+
+\pagestyle{plain}{
+\pagestyle{empty}
+\noindent
+
+{\small
+\begin{tabular}{p{0.61\textwidth}
+p{0.32\textwidth}}
+\includegraphics[scale=0.1]
+{IMG/usm.jpg}& 
+\includegraphics[scale=0.35]
+{IMG/elo.jpg}
+\end{tabular}
+}
+
+\begin{center}
+
+\rule{\linewidth}{0.5mm}\\[0.4cm]
+\par\vspace{0.25cm}
+\Huge\textbf{
+ Titulo Informe\\[0.15cm]}
+\Large\textbf{
+\centering
+Sub-Titulo Informe
+ }
+
+ 
+\par\vspace{0.5cm}
+\rule{\linewidth}{0.5mm}\\[5.0cm]
+
+\vspace{2cm}
+\date{\today}
+\Large{
+\begin{tabular}{rl}
+\textbf{Fecha}       &  \thedate \\
+\textbf{\begin{tabular}[c]{@{}l@{}}Integrantes: \\ $\;$ \\ $\;$ \end{tabular}} & \begin{tabular}[c]{@{}l@{}} Integrante 1 \\ Integrante 2 \\ Integrante 3  \end{tabular} \\
+\textbf{Asignatura:}  & Insertar Ramo \\
+\textbf{Profesor:}  & Insertar Profesor \\
+\end{tabular}
+}
+\end{center}
+\clearpage
+}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{Insertar Ramo}}
+\rhead{ \fancyplain{}{\the\year} }
+\lfoot{ \fancyplain{}{USM 2022 - 2} }
+\rfoot{ \fancyplain{}{\thepage} }
+\renewcommand{\footrulewidth}{0.5pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\tableofcontents
+\end{center}
+
+\begin{center}
+\listoffigures
+\end{center}
+
+\clearpage
+
+\newpage
+
+
+\section{Introducción}
+
+
+\subsection{Objetivos}
+
+\begin{enumerate}
+    \item 
+    \item 
+    \item 
+    \item 
+\end{enumerate}
+
+\newpage
+
+\section{Desarrollo}
+
+\subsection{Actividad 1}
+
+\begin{enumerate}
+    \item
+    \item 
+    \item 
+\end{enumerate}
+
+\subsection{Actividad 2}
+
+\begin{enumerate}
+    \item 
+    \item 
+    \item 
+\end{enumerate}
+
+\subsection{Actividad 3}
+
+\begin{enumerate}
+    \item 
+    \item 
+    \item 
+\end{enumerate}
+
+\newpage
+
+\section{Conclusiones}
+
+\newpage
+
+\section{Bibliografía}
+
+\newpage
+
+\end{document}
